@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-loony-main.flake = false;
+  inputs.src-loony-main.ref   = "refs/heads/main";
   inputs.src-loony-main.owner = "shayanhabibi";
-  inputs.src-loony-main.ref   = "main";
   inputs.src-loony-main.repo  = "loony";
   inputs.src-loony-main.type  = "github";
   
