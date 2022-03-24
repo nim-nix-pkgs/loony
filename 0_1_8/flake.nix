@@ -1,5 +1,5 @@
 {
-  description = ''Lock-free threadsafe MPMC with high throughput'';
+  description = ''Fast mpmc queue with sympathetic memory behavior'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
