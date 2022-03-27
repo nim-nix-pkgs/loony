@@ -11,6 +11,7 @@
   inputs.src-loony-0_1_6.ref   = "refs/tags/0.1.6";
   inputs.src-loony-0_1_6.owner = "shayanhabibi";
   inputs.src-loony-0_1_6.repo  = "loony";
+  inputs.src-loony-0_1_6.dir   = "";
   inputs.src-loony-0_1_6.type  = "github";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
