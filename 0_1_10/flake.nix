@@ -11,8 +11,23 @@
   inputs.src-loony-0_1_10.ref   = "refs/tags/0.1.10";
   inputs.src-loony-0_1_10.owner = "shayanhabibi";
   inputs.src-loony-0_1_10.repo  = "loony";
-  inputs.src-loony-0_1_10.dir   = "";
   inputs.src-loony-0_1_10.type  = "github";
+  
+  inputs."github-disruptek-balls".owner = "nim-nix-pkgs";
+  inputs."github-disruptek-balls".ref   = "master";
+  inputs."github-disruptek-balls".repo  = "github-disruptek-balls";
+  inputs."github-disruptek-balls".dir   = "3_7_0";
+  inputs."github-disruptek-balls".type  = "github";
+  inputs."github-disruptek-balls".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-disruptek-balls".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  
+  inputs."github.com/nim-works/cps".owner = "nim-nix-pkgs";
+  inputs."github.com/nim-works/cps".ref   = "master";
+  inputs."github.com/nim-works/cps".repo  = "github.com/nim-works/cps";
+  inputs."github.com/nim-works/cps".dir   = "";
+  inputs."github.com/nim-works/cps".type  = "github";
+  inputs."github.com/nim-works/cps".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github.com/nim-works/cps".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
