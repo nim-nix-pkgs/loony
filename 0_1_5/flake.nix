@@ -13,21 +13,21 @@
   inputs.src-loony-0_1_5.repo  = "loony";
   inputs.src-loony-0_1_5.type  = "github";
   
-  inputs."github.com/disruptek/balls".owner = "nim-nix-pkgs";
-  inputs."github.com/disruptek/balls".ref   = "master";
-  inputs."github.com/disruptek/balls".repo  = "github.com/disruptek/balls";
-  inputs."github.com/disruptek/balls".dir   = "";
-  inputs."github.com/disruptek/balls".type  = "github";
-  inputs."github.com/disruptek/balls".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."github.com/disruptek/balls".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."github-disruptek-balls".owner = "nim-nix-pkgs";
+  inputs."github-disruptek-balls".ref   = "master";
+  inputs."github-disruptek-balls".repo  = "github-disruptek-balls";
+  inputs."github-disruptek-balls".dir   = "3_7_0";
+  inputs."github-disruptek-balls".type  = "github";
+  inputs."github-disruptek-balls".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-disruptek-balls".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
-  inputs."github.com/disruptek/cps".owner = "nim-nix-pkgs";
-  inputs."github.com/disruptek/cps".ref   = "master";
-  inputs."github.com/disruptek/cps".repo  = "github.com/disruptek/cps";
-  inputs."github.com/disruptek/cps".dir   = "";
-  inputs."github.com/disruptek/cps".type  = "github";
-  inputs."github.com/disruptek/cps".inputs.nixpkgs.follows = "nixpkgs";
-  inputs."github.com/disruptek/cps".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
+  inputs."github-disruptek-cps".owner = "nim-nix-pkgs";
+  inputs."github-disruptek-cps".ref   = "master";
+  inputs."github-disruptek-cps".repo  = "github-disruptek-cps";
+  inputs."github-disruptek-cps".dir   = "0_4_4";
+  inputs."github-disruptek-cps".type  = "github";
+  inputs."github-disruptek-cps".inputs.nixpkgs.follows = "nixpkgs";
+  inputs."github-disruptek-cps".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
   
   outputs = { self, nixpkgs, flakeNimbleLib, ...}@deps:
   let 
